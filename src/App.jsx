@@ -11,6 +11,8 @@ import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import ShopContextProvider from "./context/shopContext";
+import Footer from "./components/Footer";
+import Copyright from "./components/Copyright";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="/place-order" element={<PlaceOrder />} />
             <Route path="/orders" element={<Orders />} />
           </Routes>
+          <Footer />
+          <Copyright />
         </div>
       </BrowserRouter>
     </ShopContextProvider>

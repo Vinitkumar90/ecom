@@ -12,19 +12,19 @@ const Navbar = () => {
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
-          <p>Home</p>
+          <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/collection" className="flex flex-col items-center gap-1">
-          <p>Collection</p>
+          <p>COLLECTION</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/about" className="flex flex-col items-center gap-1">
-          <p>About</p>
+          <p>ABOUT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/contact" className="flex flex-col items-center gap-1">
-          <p>Contact</p>
+          <p>CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
       </ul>
@@ -61,10 +61,10 @@ const Navbar = () => {
                       <img src={assets.dropdown_icon} className="h-4 rotate-180"  alt="" />
                       <p>Back</p>
                 </div>
-                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/">Home</NavLink>
-                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/collection">Collection</NavLink>
-                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/about">About</NavLink>
-                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/contact">Contact</NavLink>
+                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/">HOME</NavLink>
+                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/collection">COLLECTION</NavLink>
+                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/about">ABOUT</NavLink>
+                <NavLink onClick={() => setVisible(!visible)} className="py-2 pl-6 border-b" to="/contact">CONTACT</NavLink>
             </div>
       </div>
     </div>
