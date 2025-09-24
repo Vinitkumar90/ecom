@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import ShopContextProvider from "./context/shopContext";
 import Footer from "./components/Footer";
 import Copyright from "./components/Copyright";
+import SearchBar from "./pages/SearchBar";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
           <Navbar />
+          <SearchBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collection" element={<Collection />} />
