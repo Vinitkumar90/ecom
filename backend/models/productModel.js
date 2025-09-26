@@ -26,7 +26,7 @@ const productSchema = new mongoose.Schema({
         required: true,
       },
       bestseller:{
-        type:boolean
+        type: Boolean
       },
       date:{
         type:Number,
