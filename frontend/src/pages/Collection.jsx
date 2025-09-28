@@ -5,7 +5,7 @@ import Title from "../components/Title";
 import ProductItem from "../components/ProductItem";
 
 const Collection = () => {
-  const { products,search,showSearch } = useContext(ShopContext);
+  const { products,search,showSearch,token } = useContext(ShopContext);
   const [showFilter, setShowFilter] = useState(false);
 
   const [filterProducts, setFilterProducts] = useState([]);
@@ -55,6 +55,10 @@ const Collection = () => {
     setFilterProducts(fp);
 
   }, [category, subCategory, sortOption, products, search]);
+
+  if(!token){
+    return <h1 className="text-gray-400">dude just log in</h1>
+  }
 
   return (
     <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t border-gray-300">
