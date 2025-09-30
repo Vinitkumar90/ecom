@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 import Copyright from "./components/Copyright";
 import SearchBar from "./pages/SearchBar";
 import { ToastContainer } from "react-toastify";
+import Verify from "./pages/Verify";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/place-order" element={<PlaceOrder />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/verify" element={<Verify />} />
           </Routes>
           <Footer />
           <Copyright />
